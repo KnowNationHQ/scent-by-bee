@@ -1,17 +1,13 @@
 "use client"
-import { useEffect, useState } from "react"
 
 export function LoadingOverlay() {
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => { setMounted(true) }, [])
-
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background ${
-        mounted ? "animate-splash" : ""
-      }`}
+      className="splash-overlay fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background"
       onAnimationEnd={(e) => {
-        if (e.animationName === "splash-out") (e.target as HTMLElement).style.display = "none"
+        if (e.animationName === "splash-fade-out") {
+          ;(e.currentTarget as HTMLElement).style.display = "none"
+        }
       }}
     >
       <div className="flex flex-col items-center gap-5">
