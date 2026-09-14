@@ -45,7 +45,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
       </div>
       <Button type="submit" className="w-full min-h-11">{isLogin ? "Sign in" : "Create account"}</Button>
       <p className="text-center text-sm text-muted-foreground">
-        {isLogin ? "New to scent_by_bee?" : "Already have an account?"}{" "}
+        {isLogin ? "New to SCENT BY BEE?" : "Already have an account?"}{" "}
         <Link href={isLogin ? "/register" : "/login"} className="min-h-11 px-1 inline-flex items-center font-medium text-foreground underline underline-offset-4">
           {isLogin ? "Create an account" : "Sign in"}
         </Link>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { AuthForm } from "@/components/blocks/auth-form"
 
-export const metadata: Metadata = { title: "Create account — scent_by_bee" }
+export const metadata: Metadata = { title: "Create account — SCENT BY BEE" }
 
 export default function RegisterPage() {
   return (
