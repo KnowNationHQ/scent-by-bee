@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="48" viewBox="0 0 320 48">
+  <defs>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4587a"/>
+      <stop offset="100%" stop-color="#d4729a"/>
+    </linearGradient>
+  </defs>
+  <!-- Shopping bag icon -->
+  <g transform="translate(0,6)">
+    <path d="M8 16 L4 36 C3.5 38 5 40 7 40 L31 40 C33 40 34.5 38 34 36 L30 16 Z" fill="none" stroke="#c4587a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 16 C12 10 15 5 19 5 C23 5 26 10 26 16" fill="none" stroke="#c4587a" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- SCENT text -->
+  <text x="46" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" letter-spacing="4" fill="#2d1f24">SCENT</text>
+  <!-- BY BEE text -->
+  <text x="186" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" letter-spacing="4" fill="url(#pink)">BY BEE</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+  <rect width="600" height="750" fill="#e7e5e4"/>
+  <rect x="220" y="120" width="160" height="320" rx="12" fill="#d6d3d1"/>
+  <rect x="260" y="80" width="80" height="60" rx="6" fill="#a8a29e"/>
+  <rect x="270" y="60" width="60" height="30" rx="4" fill="#78716c"/>
+  <text x="300" y="540" font-family="Georgia, serif" font-size="36" fill="#44403c" text-anchor="middle">Duo Luxe</text>
+</svg>

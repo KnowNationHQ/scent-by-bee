@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --animate-fade-in: fade-in 0.6s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  --color-background: #fdf6f8;
+  --color-foreground: #2d1f24;
+  --color-card: #ffffff;
+  --color-card-foreground: #2d1f24;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #2d1f24;
+  --color-primary: #c4587a;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5e6ec;
+  --color-secondary-foreground: #2d1f24;
+  --color-muted: #f5e6ec;
+  --color-muted-foreground: #8a7078;
+  --color-accent: #f5e6ec;
+  --color-accent-foreground: #2d1f24;
+  --color-destructive: #c45d4a;
+  --color-border: #ebd6df;
+  --color-input: #ebd6df;
+  --color-ring: #c4587a;
+  --radius: 0.75rem;
+}
+
+:root {
+  --background: #fdf6f8;
+  --foreground: #2d1f24;
+  --card: #ffffff;
+  --card-foreground: #2d1f24;
+  --popover: #ffffff;
+  --popover-foreground: #2d1f24;
+  --primary: #c4587a;
+  --primary-foreground: #ffffff;
+  --secondary: #f5e6ec;
+  --secondary-foreground: #2d1f24;
+  --muted: #f5e6ec;
+  --muted-foreground: #8a7078;
+  --accent: #f5e6ec;
+  --accent-foreground: #2d1f24;
+  --destructive: #c45d4a;
+  --border: #ebd6df;
+  --input: #ebd6df;
+  --ring: #c4587a;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
