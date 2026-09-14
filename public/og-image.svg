@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6f8"/>
+      <stop offset="100%" stop-color="#f5e6ec"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4587a"/>
+      <stop offset="100%" stop-color="#d4729a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Cart icon -->
+  <g transform="translate(490,120) scale(4)">
+    <circle cx="10" cy="27" r="2.5" fill="none" stroke="#c4587a" stroke-width="2"/>
+    <circle cx="24" cy="27" r="2.5" fill="none" stroke="#c4587a" stroke-width="2"/>
+    <path d="M3 4 L6 4 L9 22 L22 22 L24 8 L7 8" fill="none" stroke="#c4587a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Brand name -->
+  <text x="600" y="340" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" letter-spacing="6" fill="#2d1f24">SCENT</text>
+  <text x="600" y="340" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" letter-spacing="6" fill="url(#pink)" dx="240">BY BEE</text>
+  <!-- Tagline -->
+  <text x="600" y="420" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" letter-spacing="3" fill="#8a7078">Authentic · Affordable · Luxury Perfumes</text>
+  <!-- Delivery -->
+  <text x="600" y="480" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" fill="#8a7078">Nationwide Delivery Across Nigeria</text>
+  <!-- WhatsApp -->
+  <text x="600" y="530" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#c4587a">DM to Order on WhatsApp</text>
+</svg>

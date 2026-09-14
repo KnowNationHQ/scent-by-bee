@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, ShoppingBag, X } from "lucide-react"
+import { Menu, ShoppingCart, X } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/hooks/use-cart"
 
@@ -40,7 +40,7 @@ export function Navbar() {
         </nav>
 
         <Link href="/cart" className="relative inline-flex h-11 w-11 shrink-0 items-center justify-center" aria-label={`Cart, ${count} items`}>
-          <ShoppingBag className="h-5 w-5" />
+          <ShoppingCart className="h-5 w-5" />
           {count > 0 && (
             <Badge variant="secondary" className="absolute -right-0.5 -top-0.5 h-5 min-w-5 justify-center rounded-full px-1 text-[10px]">
               {count}

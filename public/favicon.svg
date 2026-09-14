@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <text x="0" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#c4587a">B</text>
+  <circle cx="10" cy="27" r="2.5" fill="none" stroke="#c4587a" stroke-width="2"/>
+  <circle cx="24" cy="27" r="2.5" fill="none" stroke="#c4587a" stroke-width="2"/>
+  <path d="M3 4 L6 4 L9 22 L22 22 L24 8 L7 8" fill="none" stroke="#c4587a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
