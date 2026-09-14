@@ -3,6 +3,7 @@ import { CartProvider } from "@/hooks/use-cart"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppFloat } from "@/components/layout/whatsapp-float"
+import { LoadingOverlay } from "@/components/layout/loading-overlay"
 import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className="antialiased">
+        <LoadingOverlay />
         <CartProvider>
           <Navbar />
           <main className="min-h-[70vh]">{children}</main>
