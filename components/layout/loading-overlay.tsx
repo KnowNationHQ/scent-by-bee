@@ -2,20 +2,17 @@
 import { useEffect, useState } from "react"
 
 export function LoadingOverlay() {
-  const [visible, setVisible] = useState(true)
-
-  useEffect(() => {
-    const t = setTimeout(() => setVisible(false), 2000)
-    return () => clearTimeout(t)
-  }, [])
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
 
   return (
     <div
-      aria-hidden={!visible}
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background transition-opacity duration-700 ${
-        visible ? "opacity-100" : "pointer-events-none opacity-0"
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background ${
+        mounted ? "animate-splash" : ""
       }`}
-      style={{ transitionDelay: visible ? "0ms" : "0ms" }}
+      onAnimationEnd={(e) => {
+        if (e.animationName === "splash-out") (e.target as HTMLElement).style.display = "none"
+      }}
     >
       <div className="flex flex-col items-center gap-5">
         <div className="relative h-16 w-16">
