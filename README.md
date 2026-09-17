@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SCENT BY BEE
+
+**Authentic, Affordable, Luxury Perfumes**
+
+A modern e-commerce storefront built for @chy.amaka's TikTok perfume business. Nationwide delivery across Nigeria with WhatsApp ordering.
+
+🔗 **Live:** [scent-by-bee.vercel.app](https://scent-by-bee.vercel.app/)
+
+## Features
+
+- **Product Catalog** — 6 perfumes across 3 categories (EDP, EDT, Gift Sets)
+- **Naira Pricing** — All prices in ₦ (₦45,000 – ₦130,000)
+- **Shopping Cart** — Add/remove items, quantity control, persists in localStorage
+- **Checkout Flow** — Order summary with SB- order prefix
+- **WhatsApp Integration** — Floating button + "DM to Order" links to wa.me/2349036159129
+- **Mobile-First Design** — Responsive across all devices with hamburger menu
+- **Loading Animation** — Branded splash screen with spinner
+- **OG Image** — Social sharing card for TikTok/WhatsApp
+- **Promo Code** — BEE10 (10% off first order)
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router, Turbopack) |
+| UI | Tailwind CSS v4, shadcn/ui (base-nova) |
+| Components | Radix primitives, Lucide icons |
+| Cart | Pure functions + React Context + localStorage |
+| Language | TypeScript |
+| Testing | Vitest |
+| Hosting | Vercel (auto-deploy on push) |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Run tests
+npx vitest run
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+scent_by_bee/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx            # Homepage
+│   ├── shop/               # Product listing
+│   ├── products/[slug]/    # Product detail
+│   ├── cart/               # Shopping cart
+│   ├── checkout/           # Checkout flow
+│   ├── login/              # Sign in
+│   ├── register/           # Create account
+│   ├── order-confirmation/ # Order success
+│   └── loading.tsx         # Route transition loading
+├── components/
+│   ├── blocks/             # Feature components
+│   ├── layout/             # Navbar, footer, WhatsApp float
+│   └── ui/                 # shadcn primitives
+├── hooks/                  # Cart context provider
+├── lib/                    # Data, cart logic, utils
+├── public/                 # Logo, OG image, product SVGs
+└── docs/                   # Marketing message
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Products
 
-## Learn More
+| Product | Category | Price | Sizes |
+|---|---|---|---|
+| Velvet Oud | EDP | ₦85,000 | 30ml / 50ml / 100ml |
+| Citrus Bloom | EDP | ₦72,000 | 30ml / 50ml / 100ml |
+| Midnight Musk | EDT | ₦58,000 | 30ml / 50ml |
+| Golden Sahara | EDT | ₦62,000 | 30ml / 50ml |
+| The Discovery Set | Gift Set | ₦45,000 | 5 × 10ml |
+| Duo Luxe | Gift Set | ₦130,000 | 2 × 50ml |
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Channel | Details |
+|---|---|
+| WhatsApp | [wa.me/2349036159129](https://wa.me/2349036159129) |
+| Phone | 09036159129 |
+| Location | Lagos, Nigeria |
+| Delivery | Nationwide |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private — built for SCENT BY BEE.

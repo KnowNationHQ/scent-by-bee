@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://scent-by-bee.vercel.app"),
   title: "SCENT BY BEE — Authentic, Affordable Luxury Perfumes",
   description: "Authentic, Affordable, Luxury Perfumes. Wholesale & Retail. Nationwide Delivery. DM to Order.",
   openGraph: {
